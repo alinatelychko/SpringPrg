@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Визначаємо різні завдання -->
+    <bean id="rescuePrincessQuest" class="HW1.RescuePrincessQuest"/>
+    <bean id="holyGrailQuest" class="HW1.HolyGrailQuest"/>
+
+    <!-- Список лицарів -->
+    <bean id="knight1" class="HW1.Knight">
+        <constructor-arg value="Сер Артур"/>
+        <constructor-arg ref="rescuePrincessQuest"/>
+    </bean>
+
+    <bean id="knight2" class="HW1.Knight">
+        <constructor-arg value="Сер Ланселот"/>
+        <constructor-arg ref="holyGrailQuest"/>
+    </bean>
+
+    <bean id="knight3" class="HW1.Knight">
+        <constructor-arg value="Сер Гавейн"/>
+        <constructor-arg ref="rescuePrincessQuest"/>
+    </bean>
+
+    <bean id="knight4" class="HW1.Knight">
+        <constructor-arg value="Сер Персіваль"/>
+        <constructor-arg ref="holyGrailQuest"/>
+    </bean>
+
+    <bean id="knight5" class="HW1.Knight">
+        <constructor-arg value="Сер Бедивер"/>
+        <constructor-arg ref="rescuePrincessQuest"/>
+    </bean>
+</beans>
