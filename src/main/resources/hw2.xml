@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Київ -->
+    <bean id="kyivCity" class="HW2.City" init-method="init">
+        <constructor-arg value="Київ"/>  <!-- Конструктор приймає назву міста -->
+        <property name="population" value="3000000"/>  <!-- Setter -->
+    </bean>
+
+    <!-- Львів -->
+    <bean id="lvivCity" class="HW2.City" init-method="init">
+        <constructor-arg value="Львів"/>
+        <property name="population" value="750000"/>
+    </bean>
+
+    <!-- Одеса -->
+    <bean id="odesaCity" class="HW2.City" init-method="init">
+        <constructor-arg value="Одеса"/>
+        <property name="population" value="1010000"/>
+    </bean>
+
+    <!-- Харків -->
+    <bean id="kharkivCity" class="HW2.City" init-method="init">
+        <constructor-arg value="Харків"/>
+        <property name="population" value="1400000"/>
+    </bean>
+
+    <!-- Дніпро -->
+    <bean id="dniproCity" class="HW2.City" init-method="init">
+        <constructor-arg value="Дніпро"/>
+        <property name="population" value="980000"/>
+    </bean>
+
+</beans>
