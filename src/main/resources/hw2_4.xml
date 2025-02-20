@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cityPopulation" class="java.util.HashMap">
+        <constructor-arg>
+            <map>
+                <entry key="Київ" value="3000000"/>
+                <entry key="Львів" value="750000"/>
+                <entry key="Одеса" value="1010000"/>
+                <entry key="Харків" value="1400000"/>
+                <entry key="Дніпро" value="980000"/>
+            </map>
+        </constructor-arg>
+    </bean>
+</beans>
